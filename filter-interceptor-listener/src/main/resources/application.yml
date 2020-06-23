@@ -1,0 +1,112 @@
+server:
+  port: 8088
+spring:
+  main:
+    allow-bean-definition-overriding: true
+  application:
+    name: report
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    druid:
+      stat-view-servlet:
+        enabled: true
+    dynamic:
+      druid:
+        initial-size: 10 # 以下是连接池配置
+        max-active: 100
+        min-idle: 10
+        max-wait: 60000
+        pool-prepared-statements: true
+        max-pool-prepared-statement-per-connection-size: 20
+        time-between-eviction-runs-millis: 60000
+        min-evictable-idle-time-millis: 300000
+        validation-query: SELECT 1
+        test-while-idle: true
+        test-on-borrow: false
+        test-on-return: false
+      primary: lpp #设置默认的数据源或者数据源组,默认值即为master，如果读者只是单数据源只需要注释掉slave相关配置即可，这里为了方便演示master与slave保持相同
+      datasource:
+        lpp_user:
+          url: jdbc:mysql://192.168.8.104:3306/lpp_user?useUnicode=true&characterEncoding=utf8&createDatabaseIfNotExist=true&useSSL=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true
+          username: root
+          password: 123456
+          driver-class-name: com.mysql.cj.jdbc.Driver
+        lpp_activity:
+          url: jdbc:mysql://192.168.8.104:3306/lpp_activity?useUnicode=true&characterEncoding=utf8&createDatabaseIfNotExist=true&useSSL=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true
+          username: root
+          password: 123456
+          driver-class-name: com.mysql.cj.jdbc.Driver
+        lpp_goods:
+          url: jdbc:mysql://192.168.8.104:3306/lpp_goods?useUnicode=true&characterEncoding=utf8&createDatabaseIfNotExist=true&useSSL=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true
+          username: root
+          password: 123456
+          driver-class-name: com.mysql.cj.jdbc.Driver
+
+
+  mvc:
+    throw-exception-if-no-handler-found: true
+  redis:
+    database: 0
+    host: 192.168.8.104
+    password:
+    port: 6379
+    ssl: false
+    timeout: 5000
+  resources:
+    add-mappings: false
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    registry-fetch-interval-seconds: 1
+    serviceUrl:
+      defaultZone: http://mingbyte:123456@localhost:8081/eureka
+  instance:
+    appname: ${spring.application.name}
+    instance-id: ${spring.application.name}:${spring.cloud.client.ip-address}:${server.port}
+    preferIpAddress: true
+
+feign:
+  hystrix:
+    enabled: true
+
+
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          strategy: SEMAPHORE
+jwt:
+  key: Authorization
+  sign: mingbyte
+
+logging:
+  config: classpath:logback-boot.xml
+
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    map-underscore-to-camel-case: true
+  mapper-locations: classpath:mybatis/*Mapper.xml
+  type-enums-package: com.mingbyte.lpp.report.enums.**
+
+
+#    druid:
+#      max-active: 20
+#      driver-class-name: com.mysql.cj.jdbc.Driver
+#      initial-size: 5
+#      max-pool-prepared-statement-per-connection-size: -1
+#      max-wait: 6000
+#      min-evictable-idle-time-millis: 60000
+#      min-idle: 5
+#      password: 123456
+#      test-on-borrow: false
+#      test-on-return: false
+#      test-while-idle: true
+#      time-between-eviction-runs-millis: 300000
+#      url: jdbc:mysql://192.168.8.104:3306/lpp_activity?useUnicode=true&characterEncoding=utf8&createDatabaseIfNotExist=true&useSSL=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true
+#      username: root
+#      validation-query: SELECT 1 FROM DUAL
+#    type: com.alibaba.druid.pool.DruidDataSource
+

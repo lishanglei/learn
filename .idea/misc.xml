@@ -10,6 +10,9 @@
     <option name="ignoredFiles">
       <set>
         <option value="$PROJECT_DIR$/lock/pom.xml" />
+        <option value="$PROJECT_DIR$/mqshop/pom.xml" />
+        <option value="$PROJECT_DIR$/rocketmq-producer/pom.xml" />
+        <option value="$PROJECT_DIR$/shop/shop-common/pom.xml" />
       </set>
     </option>
   </component>

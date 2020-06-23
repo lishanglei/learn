@@ -6,28 +6,68 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="proxy" />
+        <module name="shop-user-service" />
         <module name="jvm" />
-        <module name="rocketmq" />
         <module name="memory" />
-        <module name="executor-pool" />
-        <module name="lock" />
+        <module name="shop-pay-service" />
+        <module name="shop-pojo" />
+        <module name="springboot-dubbo-consumer" />
+        <module name="shop-pay-web" />
+        <module name="shop-coupon-service" />
+        <module name="shop-order-web" />
+        <module name="jms" />
+        <module name="shop-goods-service" />
         <module name="Thread" />
+        <module name="shop-order-servce" />
+        <module name="lock" />
+        <module name="proxy" />
+        <module name="shop-common" />
+        <module name="shop-api" />
+        <module name="producer" />
+        <module name="consumer" />
+        <module name="springboot-dubbo-provider" />
+        <module name="executor-pool" />
+        <module name="springboot-dubbo-interface" />
+        <module name="filter-interceptor-listener" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="lock" target="1.8" />
+      <module name="mqshop" target="1.8" />
+      <module name="shop-api (1)" target="1.8" />
+      <module name="shop-common" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="Thread" options="-parameters" />
+      <module name="consumer" options="-parameters" />
       <module name="executor-pool" options="-parameters" />
+      <module name="filter-interceptor-listener" options="-parameters" />
+      <module name="jms" options="-parameters" />
       <module name="jvm" options="-parameters" />
       <module name="lock" options="-parameters" />
       <module name="memory" options="-parameters" />
+      <module name="mqshop" options="" />
+      <module name="producer" options="-parameters" />
       <module name="proxy" options="-parameters" />
-      <module name="rocketmq" options="-parameters" />
+      <module name="rocketmq" options="" />
+      <module name="shop" options="" />
+      <module name="shop-api" options="-parameters" />
+      <module name="shop-api (1)" options="-parameters" />
+      <module name="shop-common" options="-parameters" />
+      <module name="shop-coupon-service" options="-parameters" />
+      <module name="shop-goods-service" options="-parameters" />
+      <module name="shop-order-servce" options="-parameters" />
+      <module name="shop-order-web" options="-parameters" />
+      <module name="shop-parent" options="" />
+      <module name="shop-pay-service" options="-parameters" />
+      <module name="shop-pay-web" options="-parameters" />
+      <module name="shop-pojo" options="-parameters" />
+      <module name="shop-user-service" options="-parameters" />
+      <module name="springboot-dubbo-consumer" options="-parameters" />
+      <module name="springboot-dubbo-interface" options="-parameters" />
+      <module name="springboot-dubbo-provider" options="-parameters" />
     </option>
   </component>
 </project>

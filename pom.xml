@@ -18,9 +18,13 @@
         <module>jvm</module>
         <module>rocketmq</module>
         <module>Thread</module>
-        <module>lock</module>
         <module>executor-pool</module>
         <module>proxy</module>
+        <module>filter-interceptor-listener</module>
+        <module>jms</module>
+        <module>mqshop</module>
+        <module>shop</module>
+
     </modules>
 
     <properties>
@@ -52,6 +56,11 @@
 
     <dependencies>
         <dependency>
+            <groupId>org.apache.rocketmq</groupId>
+            <artifactId>rocketmq-client</artifactId>
+            <version>4.4.0</version>
+        </dependency>
+        <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <version>1.18.8</version>
@@ -73,42 +82,42 @@
         </dependency>
 
         <!-- MySql start -->
-        <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-            <version>${jdbc-mysql.version}</version>
-            <scope>runtime</scope>
-        </dependency>
+        <!--        <dependency>-->
+        <!--            <groupId>mysql</groupId>-->
+        <!--            <artifactId>mysql-connector-java</artifactId>-->
+        <!--            <version>${jdbc-mysql.version}</version>-->
+        <!--            <scope>runtime</scope>-->
+        <!--        </dependency>-->
 
         <!-- MySql end -->
 
         <!-- 数据库连接池 start -->
 
-        <dependency>
-            <groupId>com.alibaba</groupId>
-            <artifactId>druid-spring-boot-starter</artifactId>
-            <version>${druid.version}</version>
-        </dependency>
+        <!--        <dependency>-->
+        <!--            <groupId>com.alibaba</groupId>-->
+        <!--            <artifactId>druid-spring-boot-starter</artifactId>-->
+        <!--            <version>${druid.version}</version>-->
+        <!--        </dependency>-->
 
         <!-- 数据库连接池 start -->
 
         <!-- MyBatis start -->
 
-        <dependency>
-            <groupId>com.baomidou</groupId>
-            <artifactId>mybatis-plus-boot-starter</artifactId>
-            <version>${mybatis-plus.version}</version>
-        </dependency>
+        <!--        <dependency>-->
+        <!--            <groupId>com.baomidou</groupId>-->
+        <!--            <artifactId>mybatis-plus-boot-starter</artifactId>-->
+        <!--            <version>${mybatis-plus.version}</version>-->
+        <!--        </dependency>-->
 
-        <!-- MyBatis end -->
+        <!--        &lt;!&ndash; MyBatis end &ndash;&gt;-->
 
-        <!-- ShardingJDBC start -->
+        <!--        &lt;!&ndash; ShardingJDBC start &ndash;&gt;-->
 
-        <dependency>
-            <groupId>org.apache.shardingsphere</groupId>
-            <artifactId>sharding-jdbc-spring-boot-starter</artifactId>
-            <version>4.0.0-RC1</version>
-        </dependency>
+        <!--        <dependency>-->
+        <!--            <groupId>org.apache.shardingsphere</groupId>-->
+        <!--            <artifactId>sharding-jdbc-spring-boot-starter</artifactId>-->
+        <!--            <version>4.0.0-RC1</version>-->
+        <!--        </dependency>-->
 
         <!-- ShardingJDBC end -->
 
@@ -147,10 +156,10 @@
         <!-- JWT end -->
 
         <dependency>
-        <groupId>junit</groupId>
-        <artifactId>junit</artifactId>
-        <version>4.12</version>
-    </dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+        </dependency>
 
         <!-- JSON start -->
 
@@ -174,6 +183,19 @@
             <version>${swagger.version}</version>
         </dependency>
         <!-- Swagger end -->
+
+        <!-- springboot web -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
+
 
 </project>
