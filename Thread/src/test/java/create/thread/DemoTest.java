@@ -58,9 +58,9 @@ public class DemoTest {
         FutureTask futureTask2 = new FutureTask(ticket);
         FutureTask futureTask3 = new FutureTask(ticket);
 
-        Thread t1 = new Thread(futureTask1,"窗口一");
-        Thread t2 = new Thread(futureTask2,"窗口二");
-        Thread t3 = new Thread(futureTask3,"窗口三");
+        Thread t1 = new Thread(futureTask1, "窗口一");
+        Thread t2 = new Thread(futureTask2, "窗口二");
+        Thread t3 = new Thread(futureTask3, "窗口三");
 
         t1.start();
         t2.start();
@@ -69,25 +69,26 @@ public class DemoTest {
     }
 
     @Test
-    public void test5(){
+    public void test5() throws ExecutionException, InterruptedException {
         Ticket ticket1 = new Ticket();
         Ticket ticket2 = new Ticket();
         FutureTask futureTask1 = new FutureTask(ticket1);
         FutureTask futureTask2 = new FutureTask(ticket2);
 
-        Thread t1 = new Thread(futureTask1,"窗口一");
-        Thread t2 = new Thread(futureTask2,"窗口二");
+        Thread t1 = new Thread(futureTask1, "窗口一");
+        Thread t2 = new Thread(futureTask2, "窗口二");
 
         t1.start();
         t2.start();
+
     }
 
 
     @Test
-    public void test6(){
+    public void test6() {
 
-        Cooker cooker =new Cooker();
-        Food food =new Food();
+        Cooker cooker = new Cooker();
+        Food food = new Food();
         cooker.start();
         food.start();
     }

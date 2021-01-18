@@ -9,22 +9,23 @@ package com.learn.memory.thread;
  * ---------------------------------------------------------------------------------*
  * 2020/5/29              lishanglei      v1.0.0           Created
  */
-public class voliteDemo extends Thread{
+public class voliteDemo extends Thread {
 
     private static boolean flag = false;
 
-    private static int a =123;
-    private  int b ;
 
-    public voliteDemo(int b){
-        this.b =b;
+    private static int a = 123;
+    private int b;
+
+    public voliteDemo(int b) {
+        this.b = b;
     }
 
 
     @Override
     public void run() {
 
-        a=b;
+        a = b;
     }
 
     private static void change() {
@@ -59,7 +60,6 @@ public class voliteDemo extends Thread{
 ////            change();
 ////        });
 ////        thread1.start();
-
 
 
         voliteDemo voliteDemo = new voliteDemo(132);

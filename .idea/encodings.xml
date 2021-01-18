@@ -2,30 +2,26 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/Thread/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/arithmetic/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demo/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/es/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/executor-pool/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/filter-interceptor-listener/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/jms/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/jvm/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/memory/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mongodb/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/mqshop/consumer/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/mqshop/producer/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/mqshop/springboot-dubbo-consumer/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/mqshop/springboot-dubbo-interface/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/mqshop/springboot-dubbo-provider/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/proxy/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/reference/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/rocketmq/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/rocketmq/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/shop/shop-api/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/shop/shop-common/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/shop/shop-coupon-service/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/shop/shop-goods-service/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/shop/shop-order-servce/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/shop/shop-order-web/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/shop/shop-parent/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/shop/shop-parent/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/shop/shop-pay-service/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/shop/shop-pay-web/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/shop/shop-pojo/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/shop/shop-user-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sign/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/thread-local/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/volatile/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/xyz/src/main/java" charset="UTF-8" />
   </component>
 </project>

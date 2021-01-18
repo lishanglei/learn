@@ -1,6 +1,5 @@
 package com.thread.create.thread;
 
-import com.baomidou.mybatisplus.extension.api.R;
 
 /**
  * @author lishanglei
@@ -14,8 +13,8 @@ import com.baomidou.mybatisplus.extension.api.R;
 public class ImplementsRunnable implements Runnable {
     @Override
     public void run() {
-        for(int i=0;i<20;i++){
-            System.out.println("通过实现Runnable方式创建的线程开启了"+i);
+        for (int i = 0; i < 20; i++) {
+            System.out.println("通过实现Runnable方式创建的线程开启了" + i);
         }
     }
 }

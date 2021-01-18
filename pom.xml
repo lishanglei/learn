@@ -21,9 +21,15 @@
         <module>executor-pool</module>
         <module>proxy</module>
         <module>filter-interceptor-listener</module>
-        <module>jms</module>
         <module>mqshop</module>
-        <module>shop</module>
+        <module>es</module>
+        <module>xyz</module>
+        <module>volatile</module>
+        <module>sign</module>
+        <module>arithmetic</module>
+        <module>reference</module>
+        <module>thread-local</module>
+        <module>mongodb</module>
 
     </modules>
 
@@ -194,6 +200,12 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.openjdk.jol</groupId>
+            <artifactId>jol-core</artifactId>
+            <version>0.9</version>
         </dependency>
     </dependencies>
 

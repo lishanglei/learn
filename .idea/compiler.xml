@@ -1,60 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CompilerConfiguration">
+    <option name="USE_RELEASE_OPTION" value="false" />
     <annotationProcessing>
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="shop-user-service" />
+        <module name="sign" />
         <module name="jvm" />
-        <module name="memory" />
-        <module name="shop-pay-service" />
-        <module name="shop-pojo" />
+        <module name="arithmetic" />
+        <module name="thread-local" />
+        <module name="demo" />
         <module name="springboot-dubbo-consumer" />
-        <module name="shop-pay-web" />
-        <module name="shop-coupon-service" />
-        <module name="shop-order-web" />
-        <module name="jms" />
-        <module name="shop-goods-service" />
-        <module name="Thread" />
-        <module name="shop-order-servce" />
+        <module name="mongodb" />
+        <module name="es" />
+        <module name="reference" />
+        <module name="erweima" />
+        <module name="volatile" />
+        <module name="xyz" />
         <module name="lock" />
-        <module name="proxy" />
+        <module name="Thread" />
+        <module name="others" />
         <module name="shop-common" />
-        <module name="shop-api" />
+        <module name="memory" />
         <module name="producer" />
         <module name="consumer" />
         <module name="springboot-dubbo-provider" />
         <module name="executor-pool" />
+        <module name="proxy" />
         <module name="springboot-dubbo-interface" />
         <module name="filter-interceptor-listener" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="lock" target="1.8" />
+      <module name="erweima" target="1.8" />
+      <module name="jms" target="1.8" />
       <module name="mqshop" target="1.8" />
-      <module name="shop-api (1)" target="1.8" />
+      <module name="shop-api" target="1.8" />
       <module name="shop-common" target="1.8" />
+      <module name="shop-coupon-service" target="1.8" />
+      <module name="shop-goods-service" target="1.8" />
+      <module name="shop-order-servce" target="1.8" />
+      <module name="shop-order-web" target="1.8" />
+      <module name="shop-parent" target="1.8" />
+      <module name="shop-pay-service" target="1.8" />
+      <module name="shop-pay-web" target="1.8" />
+      <module name="shop-pojo" target="1.8" />
+      <module name="shop-user-service" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="Thread" options="-parameters" />
+      <module name="arithmetic" options="-parameters" />
       <module name="consumer" options="-parameters" />
+      <module name="demo" options="-parameters" />
+      <module name="erweima" options="-parameters" />
+      <module name="es" options="-parameters" />
       <module name="executor-pool" options="-parameters" />
       <module name="filter-interceptor-listener" options="-parameters" />
       <module name="jms" options="-parameters" />
       <module name="jvm" options="-parameters" />
-      <module name="lock" options="-parameters" />
       <module name="memory" options="-parameters" />
+      <module name="mongodb" options="-parameters" />
       <module name="mqshop" options="" />
       <module name="producer" options="-parameters" />
       <module name="proxy" options="-parameters" />
+      <module name="reference" options="-parameters" />
       <module name="rocketmq" options="" />
-      <module name="shop" options="" />
       <module name="shop-api" options="-parameters" />
-      <module name="shop-api (1)" options="-parameters" />
       <module name="shop-common" options="-parameters" />
       <module name="shop-coupon-service" options="-parameters" />
       <module name="shop-goods-service" options="-parameters" />
@@ -65,9 +80,13 @@
       <module name="shop-pay-web" options="-parameters" />
       <module name="shop-pojo" options="-parameters" />
       <module name="shop-user-service" options="-parameters" />
+      <module name="sign" options="-parameters" />
       <module name="springboot-dubbo-consumer" options="-parameters" />
       <module name="springboot-dubbo-interface" options="-parameters" />
       <module name="springboot-dubbo-provider" options="-parameters" />
+      <module name="thread-local" options="-parameters" />
+      <module name="volatile" options="-parameters" />
+      <module name="xyz" options="-parameters" />
     </option>
   </component>
 </project>

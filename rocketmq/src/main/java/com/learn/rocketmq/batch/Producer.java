@@ -3,7 +3,6 @@ package com.learn.rocketmq.batch;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.rocketmq.client.producer.DefaultMQProducer;
 import org.apache.rocketmq.client.producer.SendResult;
-import org.apache.rocketmq.client.producer.SendStatus;
 import org.apache.rocketmq.common.message.Message;
 
 import java.util.ArrayList;
@@ -33,7 +32,7 @@ public class Producer {
         //3. 启动producer
         producer.start();
         //4. 创建消息对象,指定主题Topic,tag和消息体
-        List<Message> messageList =new ArrayList<>();
+        List<Message> messageList = new ArrayList<>();
         Message message1 = new Message("BatchTopic", "Tag-1", ("Hello World" + 1).getBytes());
         Message message2 = new Message("BatchTopic", "Tag-1", ("Hello World" + 2).getBytes());
         Message message3 = new Message("BatchTopic", "Tag-1", ("Hello World" + 3).getBytes());

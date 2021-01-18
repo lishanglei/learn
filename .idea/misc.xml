@@ -5,13 +5,19 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/demo/pom.xml" />
+        <option value="$PROJECT_DIR$/erweima/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
       <set>
+        <option value="$PROJECT_DIR$/erweima/pom.xml" />
+        <option value="$PROJECT_DIR$/jms/pom.xml" />
         <option value="$PROJECT_DIR$/lock/pom.xml" />
         <option value="$PROJECT_DIR$/mqshop/pom.xml" />
+        <option value="$PROJECT_DIR$/others/pom.xml" />
         <option value="$PROJECT_DIR$/rocketmq-producer/pom.xml" />
+        <option value="$PROJECT_DIR$/shop/pom.xml" />
         <option value="$PROJECT_DIR$/shop/shop-common/pom.xml" />
       </set>
     </option>
