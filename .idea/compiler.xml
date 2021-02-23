@@ -7,7 +7,6 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="sign" />
         <module name="jvm" />
         <module name="arithmetic" />
         <module name="thread-local" />
@@ -15,22 +14,24 @@
         <module name="springboot-dubbo-consumer" />
         <module name="mongodb" />
         <module name="es" />
+        <module name="kafka" />
         <module name="reference" />
         <module name="erweima" />
+        <module name="Thread" />
+        <module name="springboot-dubbo-interface" />
         <module name="volatile" />
         <module name="xyz" />
+        <module name="filter-interceptor-listener" />
         <module name="lock" />
-        <module name="Thread" />
+        <module name="proxy" />
         <module name="others" />
         <module name="shop-common" />
-        <module name="memory" />
-        <module name="producer" />
         <module name="consumer" />
         <module name="springboot-dubbo-provider" />
         <module name="executor-pool" />
-        <module name="proxy" />
-        <module name="springboot-dubbo-interface" />
-        <module name="filter-interceptor-listener" />
+        <module name="sign" />
+        <module name="memory" />
+        <module name="producer" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -62,6 +63,7 @@
       <module name="filter-interceptor-listener" options="-parameters" />
       <module name="jms" options="-parameters" />
       <module name="jvm" options="-parameters" />
+      <module name="kafka" options="-parameters" />
       <module name="memory" options="-parameters" />
       <module name="mongodb" options="-parameters" />
       <module name="mqshop" options="" />
