@@ -30,6 +30,8 @@
         <module>reference</module>
         <module>thread-local</module>
         <module>mongodb</module>
+        <module>nacos</module>
+        <module>global-exception</module>
 
     </modules>
 
