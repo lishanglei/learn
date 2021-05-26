@@ -8,6 +8,9 @@ import java.util.concurrent.ConcurrentLinkedQueue;
 import java.util.concurrent.locks.LockSupport;
 
 /**
+ * 抽象队列同步器AbstractQueuedSynchronizer
+ * synchronized(基于底层c++语言实现的同步机制)
+ * AQS(douglea基于java实现的同步机制)
  * @author lishanglei
  * @version v1.0.0
  * @Description :aqs同步器
@@ -22,7 +25,11 @@ public class AQSLock {
      */
     private volatile int state = 0;
 
-    private volatile int valueOffset;
+    /**
+     * state字段偏移量
+     */
+    private static final long STATEOFFSET;
+
 
     /**
      * 当前持有锁的线程
@@ -38,8 +45,16 @@ public class AQSLock {
 
 
     @Autowired
-    private Unsafe unsafe = UnsafeInstance.reflectGetUnsafe();
+    private static Unsafe unsafe = UnsafeInstance.reflectGetUnsafe();
 
+    static {
+        try {
+            //获取偏移量
+            STATEOFFSET = unsafe.objectFieldOffset(AQSLock.class.getDeclaredField("state"));
+        } catch (Exception e) {
+            throw new Error();
+        }
+    }
 
     public void lock() {
 
@@ -102,7 +117,8 @@ public class AQSLock {
          *
          * 这也是CAS的思想，及比较并交换。用于保证并发时的无锁并发的安全性。
          */
-        return unsafe.compareAndSwapInt(this, valueOffset, expect, update);
+
+        return unsafe.compareAndSwapInt(this, STATEOFFSET, expect, update);
     }
 
     /**

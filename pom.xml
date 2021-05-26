@@ -33,6 +33,7 @@
         <module>nacos</module>
         <module>global-exception</module>
         <module>aqs</module>
+        <module>redis_pub</module>
 
     </modules>
 

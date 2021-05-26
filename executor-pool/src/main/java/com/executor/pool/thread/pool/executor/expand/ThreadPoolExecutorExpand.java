@@ -1,6 +1,7 @@
 package com.executor.pool.thread.pool.executor.expand;
 
 import lombok.Data;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.ThreadFactory;
