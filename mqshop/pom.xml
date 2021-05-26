@@ -22,12 +22,11 @@
     <packaging>pom</packaging>
 
     <dependencies>
-        <!--        dubbo-->
-        <dependency>
-            <groupId>com.alibaba.spring.boot</groupId>
-            <artifactId>dubbo-spring-boot-starter</artifactId>
-            <version>2.0.0</version>
-        </dependency>
+<!--        &lt;!&ndash;        dubbo&ndash;&gt;-->
+<!--        <dependency>-->
+<!--            <groupId>com.alibaba.spring.boot</groupId>-->
+<!--            <artifactId>dubbo-spring-boot-starter</artifactId>-->
+<!--        </dependency>-->
         <!--        springboot-start-->
         <dependency>
             <groupId>org.springframework.boot</groupId>

@@ -32,6 +32,7 @@
         <module>mongodb</module>
         <module>nacos</module>
         <module>global-exception</module>
+        <module>aqs</module>
 
     </modules>
 
