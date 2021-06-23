@@ -9,6 +9,8 @@ import java.util.concurrent.TimeUnit;
 
 /**
  * 延时消息
+ * 可能会造成消息积压
+ * 暂不支持自定义时间的延时,仅支持固定延时
  * @author lishanglei
  * @version v1.0.0
  * @date 2020/6/17

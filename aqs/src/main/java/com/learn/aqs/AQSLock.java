@@ -27,6 +27,7 @@ public class AQSLock {
 
     /**
      * state字段偏移量
+     *
      */
     private static final long STATEOFFSET;
 
@@ -49,7 +50,7 @@ public class AQSLock {
 
     static {
         try {
-            //获取偏移量
+            //获取偏移量(用于定于state属性在内存中的具体地址)
             STATEOFFSET = unsafe.objectFieldOffset(AQSLock.class.getDeclaredField("state"));
         } catch (Exception e) {
             throw new Error();
@@ -132,7 +133,7 @@ public class AQSLock {
         Thread current = Thread.currentThread();
         //初始状态
         int c = getState();
-        if (c == 0) {//同步器还没有被持有
+        if (c == 0) {//同步器还没有被持有0
             if ((waters.size() == 0 || current == waters.peek()) && compareAndSwapState(0, 1)) {
                 setLockHolder(current);
                 return true;

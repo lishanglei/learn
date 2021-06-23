@@ -1,6 +1,5 @@
 package com.learn.aqs;
 
-import org.springframework.context.annotation.Configuration;
 import sun.misc.Unsafe;
 
 import java.lang.reflect.Field;
