@@ -22,18 +22,19 @@
         <module>proxy</module>
         <module>filter-interceptor-listener</module>
         <module>mqshop</module>
-        <module>es</module>
         <module>xyz</module>
         <module>volatile</module>
         <module>sign</module>
         <module>arithmetic</module>
         <module>reference</module>
-        <module>thread-local</module>
         <module>mongodb</module>
         <module>nacos</module>
         <module>global-exception</module>
         <module>aqs</module>
         <module>redis_pub</module>
+        <module>es-test</module>
+        <module>spring-data</module>
+        <module>zk</module>
 
     </modules>
 
@@ -65,6 +66,11 @@
     </properties>
 
     <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-configuration-processor</artifactId>
+            <optional>true</optional>
+        </dependency>
         <dependency>
             <groupId>org.apache.rocketmq</groupId>
             <artifactId>rocketmq-client</artifactId>
